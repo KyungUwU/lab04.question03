@@ -1,35 +1,51 @@
-/* Example custom CSS (override Bootstrap if needed) */
+/* 
+  Custom CSS file - override Bootstrap if needed.
+  This file is linked in index.html with:
+  <link rel="stylesheet" href="styles.css" />
+*/
 
 /* Use Roboto as the base font if desired */
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Simple placeholder for your logo box */
-.logo-placeholder {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  border-radius: 5px;
-}
-
-/* Basic link styling */
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* Adjust the left and right column heading, if you want */
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-/* Tweak spacing / borders in the left column if needed */
-.border {
-  border: 1px solid #ccc !important;
-}
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Placeholder for logo box */
+  .logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Basic link styling */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Optional heading style */
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  /* 
+    Force border with !important to override potential Bootstrap classes
+    and make it visible if needed
+  */
+  .border {
+    border: 1px solid #ccc !important;
+  }
+  
+  /*
+    Explanation of 2-column layout:
+    - We use col-md-6 for each side inside a .row
+    - Bootstrap grid has 12 columns; col-md-6 = 6 columns
+    - 6 + 6 = 12, so on screens >=768px, they appear side by side
+    - On smaller screens, they stack vertically
+  */
+  
