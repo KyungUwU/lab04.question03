@@ -1,0 +1,35 @@
+/* Example custom CSS (override Bootstrap if needed) */
+
+/* Use Roboto as the base font if desired */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Simple placeholder for your logo box */
+.logo-placeholder {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Basic link styling */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Adjust the left and right column heading, if you want */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Tweak spacing / borders in the left column if needed */
+.border {
+  border: 1px solid #ccc !important;
+}
